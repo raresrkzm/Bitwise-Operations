@@ -1,0 +1,66 @@
+* ## Carausu Nelu-Rares-Ionut
+* ## 323CB
+*
+* ## Tema 1 PC
+*
+* Am folosit macro-uri la toate task-urile pentru a reduce 
+* numarul de warning-uri
+*
+*
+* ## Task 1
+*
+* Variabila n este pe 3 biti si, cu ajutorul unei masti copiez
+* cei mai semnificativi 3 biti din numarul citit, apoi, shiftez n-ul
+* cu dimensiunea numarului citit in biti - dimensiunea lui n 
+* Cu ajutorul a doua masti, obtin cele n valori ale operatiilor si 
+* pun intr-un string caracterul corespunzator
+* Copiez si bitii variabilei dim, shiftandu-i la dreapta cu
+* dimesiunea numarului citit - dimensiunea lui n - dimensiunea lui dim -
+* dimensiunea numarului fiecarei operatii * n pentru a obtine valoarea exacta
+* La final, afisez pe aceeasi linie n-ul, cele n operatii si dim-ul
+*
+*
+* ## Task 2
+*
+* Repet ce am facut la task-ul 1 cu exceptia afisarii
+* Apoi, aflu numarul de numere care trebuie citite
+* Pentru un numar intreg pozitiv nr citesc nr numere, iar
+* pentru un numar cuprins intre 2 numere intregi z si z + 1, 
+* citesc z + 1 numere, punand aceste numere intr-un vector
+* Iterez peste fiecare numar din vector si copiez cei dim biti
+* pe cate o pozitie intr-un nou vector, operanzi
+* La final, calculez rezultatul operatiilor fara a tine cont
+* de ordinea operatiilor si afisez rezultatul
+*
+*
+* ## Task 3
+*
+* Extind ce am facut la task-ul 2 si pentru dim care nu se divid la 16
+* In cazul in care dim este mai mic decat 8, inseamna ca din fiecare
+* numar se pot obtine cel putin 2 operanzi, iar apoi iau ultimii 
+* 16 % dim biti si formez un alt operand cu ( dim - 16 % dim ) din 
+* bitii de la celalalt numar si tot asa pana formez toti operanzii
+* Si pentru cazul in care dim este mai mare decat 8, inseamna ca din 
+* fiecare numar se poate obtine maxim un operand, iar apoi iau ultimii 
+* 16 % dim biti si formez un alt operand cu ( dim - 16 % dim ) din 
+* bitii de la celalalt numar si tot asa pana formez toti operanzii
+* La final, calculez rezultatul operatiilor fara a tine cont
+* de ordinea operatiilor si afisez rezultatul
+*
+*
+* ## Task 4
+*
+* Extind ce am facut la task-ul 2 prin formarea unui vector de string-uri
+* Pe pozitiile pare din vector pun operanzii, iar pe pozitiile impare pun operatiile
+* Pentru cazul general, in care am cel putin 3 operanzi, parcurg vectorul
+* doar pe pozitiile impare, unde se afla operatiile si caut toate operatiile
+* de gradul 2, apoi calculez intr-o variabila rezultatul operatiei dintre
+* operandul aflat pe pozitia anterioara si cel aflat pe pozitia urmatoare
+* Pe pozitia operandului aflat anterior pun "0", pe pozitia in care ma aflu
+* pun "+", iar pe pozitia operandului urmator pun rezultatul calculat
+* 
+* De ex: Din vectorul: 2 + 7 + 6 / 2 * 4 - 8,
+* voi obtine vectorul: 2 + 7 + 0 + 0 + 12 - 8
+*
+* In urma acestor operatii, vor ramane doar operatii de gradul 1, urmand a
+* calcula rezultatul final si afisandu-l
